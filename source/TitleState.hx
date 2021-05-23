@@ -309,9 +309,8 @@ class TitleState extends MusicBeatState
 				// Get current version of Kade Engine
 
 				//var http = new haxe.Http("https://raw.githubusercontent.com/KadeDev/Kade-Engine/master/version.downloadMe");
-				var http = new haxe.Http("https://raw.githubusercontent.com/KadeDev/Kade-Engine/patchnotes/version.downloadMe");
+				var http = new haxe.Http("https://raw.githubusercontent.com/aurazona/FNF-Sub-Zero/master/version.downloadMe");
 				var returnedData:Array<String> = [];
-				
 				http.onData = function (data:String)
 				{
 					returnedData[0] = data.substring(0, data.indexOf(';'));
@@ -438,13 +437,13 @@ class TitleState extends MusicBeatState
 			// credTextShit.text = "Friday";
 			// credTextShit.screenCenter();
 			case 13:
-				addMoreText('Friday');
+				addMoreText('Friday Night Funkin');
 			// credTextShit.visible = true;
 			case 14:
-				addMoreText('Night');
+				addMoreText('Sub');
 			// credTextShit.text += '\nNight';
 			case 15:
-				addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+				addMoreText('Zero'); // credTextShit.text += '\nFunkin';
 
 			case 16:
 				skipIntro();
