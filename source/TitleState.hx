@@ -393,25 +393,34 @@ class TitleState extends MusicBeatState
 		switch (curBeat)
 		{
 			case 1:
-				createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
+				createCoolText(['Wratcher', 'Hachi i guess', 'Lexyk0n', 'NaferNightmare']);
 			// credTextShit.visible = true;
 			case 3:
-				addMoreText('present');
+				addMoreText('');
 			// credTextShit.text += '\npresent...';
 			// credTextShit.addText();
 			case 4:
+			{
 				deleteCoolText();
+				createCoolText(['Wratcher', 'Hachi i guess', 'Lexyk0n', 'NaferNightmare']);
+			}
 			// credTextShit.visible = false;
 			// credTextShit.text = 'In association \nwith';
 			// credTextShit.screenCenter();
 			case 5:
 				if (Main.watermarks)
-					createCoolText(['Kade Engine', 'by']);
+				{
+					deleteCoolText();
+					createCoolText(['PeterAceRoblox1', 'BruceWorst']);
+				}
 				else
 					createCoolText(['In Partnership', 'with']);
 			case 7:
 				if (Main.watermarks)
-					addMoreText('KadeDeveloper');
+				{
+					deleteCoolText();
+					createCoolText(['Aurazona', 'BloxySub']);
+				}
 				else
 				{
 					addMoreText('Newgrounds');
